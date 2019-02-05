@@ -182,5 +182,10 @@ public class Program
         desktopBuilder.Computer.DisplayConfiguration();
         Console.ReadLine();
 
+        LaptopBuilder laptopBuilder = new LaptopBuilder();
+        ComputerShop laptopShop = new ComputerShop();
+        laptopShop.ConstructComputer(laptopBuilder);
+        laptopBuilder.Computer.DisplayConfiguration();
+
     }
 }
